@@ -87,8 +87,7 @@ print(Pascal_triangle(199))
 #question 4
 
 def Least_moves(x):
-    steps = np.full(x + 1, 101)
-    steps[1] = 0 
+    steps = np.full(x + 1, 0)
     for i in range(2, x + 1):
         if i % 2 == 0:
             steps[i] = steps[i // 2] + 1
